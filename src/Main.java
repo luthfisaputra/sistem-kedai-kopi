@@ -4,6 +4,12 @@ public class Main {
         Kopi kopi2 = new Kopi("Espresso", 30000);
 
         Pelanggan pelanggan = new Pelanggan("luthfi", 100000);
+
+        System.out.println("Haloo! " + pelanggan.getNamaPelanggan() + ", Saldo Kamu: " + pelanggan.getSaldo());
+        System.out.println("1. Kopi: " + kopi1.getNama() + " | Harga: " + kopi1.getHarga());
+        System.out.println("2. Kopi: " + kopi2.getNama() + " | Harga: " + kopi2.getHarga());
+
+        pelanggan.beliKopi(kopi1);
     }
 
 }

@@ -26,4 +26,13 @@ public class Pelanggan {
             System.out.println("Error: Set Saldo tidak boleh minus");
         }
     }
+
+    public void beliKopi(Kopi kopi) {
+        if (saldo >= kopi.getHarga()) {
+            saldo -= kopi.getHarga();
+            System.out.println("Pembelian SUKSESa: Selamat menikmati kopinya");
+        } else {
+            System.out.println("Pembelian GAGAL: Maaf, saldo anda kurang");
+        }
+    }
 }
