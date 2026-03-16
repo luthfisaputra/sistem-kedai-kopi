@@ -5,11 +5,11 @@ public class PelangganVIP extends Pelanggan {
     }
 
     @Override
-    public void beliKopi(Kopi kopi) {
-        double diskon = kopi.getHarga() * 0.9;
+    public void beliItem(ItemMenu item) {
+        double hargaSetelahDiskon = item.getHarga() * 0.9;
 
-        if (getSaldo() >= diskon) {
-            setSaldo(getSaldo() - diskon);
+        if (getSaldo() >= hargaSetelahDiskon) {
+            setSaldo(getSaldo() - hargaSetelahDiskon);
             System.out.println("SUKSES: Member VIP dapat diskon 10%, sisa saldo: " + getSaldo());
         } else {
             System.out.println("GAGAL: Saldo kamu kurang");

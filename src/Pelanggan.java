@@ -27,9 +27,9 @@ public class Pelanggan {
         }
     }
 
-    public void beliKopi(Kopi kopi) {
-        if (saldo >= kopi.getHarga()) {
-            saldo -= kopi.getHarga();
+    public void beliItem(ItemMenu item) {
+        if (saldo >= item.getHarga()) {
+            saldo -= item.getHarga();
             System.out.println("Pembelian SUKSESa: Selamat menikmati kopinya");
         } else {
             System.out.println("Pembelian GAGAL: Maaf, saldo anda kurang");

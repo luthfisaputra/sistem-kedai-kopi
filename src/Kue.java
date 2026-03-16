@@ -1,8 +1,8 @@
-public class Kopi implements ItemMenu {
+public class Kue implements ItemMenu {
     private String nama;
     private double harga;
 
-    public Kopi(String nama, double harga) {
+    public Kue(String nama, double harga) {
         this.nama = nama;
         this.harga = harga;
     }
@@ -15,11 +15,11 @@ public class Kopi implements ItemMenu {
         return harga;
     }
 
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
     public void setHarga(double harga) {
-        if (harga > 0) {
-            this.harga = harga;
-        } else {
-            System.out.println("Error: Harga tidak boleh minus");
-        }
+        this.harga = harga;
     }
 }
