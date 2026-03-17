@@ -30,7 +30,7 @@ public class Pelanggan {
     public void beliItem(ItemMenu item) {
         if (saldo >= item.getHarga()) {
             saldo -= item.getHarga();
-            System.out.println("Pembelian SUKSESa: Selamat menikmati kopinya");
+            System.out.println("Pembelian SUKSES: Selamat menikmati kopinya" + item.getNama());
         } else {
             System.out.println("Pembelian GAGAL: Maaf, saldo anda kurang");
         }
