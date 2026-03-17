@@ -15,10 +15,11 @@ public class Main {
             System.out.println("Nama    : " + pelanggan.getNamaPelanggan());
             System.out.println("Saldo   : " + pelanggan.getSaldo());
             System.out.println("");
-            System.out.println("1. Beli Kopi Susu.");
-            System.out.println("2. Beli Espresso.");
-            System.out.println("3. Beli Brownies");
-            System.out.println("4. Keluar");
+            System.out.println("1. [KOPI] Kopi Susu.");
+            System.out.println("2. [KOPI] Espresso.");
+            System.out.println("3. [NON-KOPI] Coklat Panas");
+            System.out.println("4. [KUE] Brownies");
+            System.out.println("5. Keluar");
 
             System.out.println("Pilih Menu");
             int pilihan = input.nextInt();
@@ -34,9 +35,11 @@ public class Main {
                     prosesPembelian(pelanggan, new Kopi("Espresso", 20000));
                     break;
                 case 3:
+                    prosesPembelian(pelanggan, new NonKopi("Coklat Panas", 12000));
+                case 4:
                     prosesPembelian(pelanggan, new Kue("Brownies", 10000));
                     break;
-                case 4:
+                case 5:
                     System.out.println("Selamat Menikmati");
                     isRunning = false;
                     break;
