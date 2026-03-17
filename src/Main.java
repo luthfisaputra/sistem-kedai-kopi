@@ -46,7 +46,6 @@ public class Main {
                 default:
                     System.out.println("Pilihan Tidak Valid");
             }
-            input.close();
         }
     }
 
